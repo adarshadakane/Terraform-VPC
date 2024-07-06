@@ -11,6 +11,7 @@ resource "aws_vpc" "myVPC" {
   }
 }
 
+
 ###############################################################################
 # Internet Gateway
 ###############################################################################
@@ -47,6 +48,7 @@ resource "aws_subnet" "public_subnet_2" {
    Name = var.public_subnet_tag_2
   }
 }
+
 
 ################################################################################
 # Database subnet
@@ -100,6 +102,7 @@ resource "aws_route_table" "database_route_table" {
     Name = var.database_route_table_tag
   }
 }
+
 
 ################################################################################
 # Route table association with subnets
@@ -158,6 +161,7 @@ resource "aws_security_group" "sg" {
       self             = null
     }
   ]
+
 
   tags = {
     Name = "tcw_security_group"
