@@ -4,8 +4,6 @@ variable "database_route_table_association_required" {
   default     = null
 }
 
-
-
 variable "create_igw" {
   description = "Whether IGW needs to be created"
   type        = bool
