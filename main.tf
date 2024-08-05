@@ -2,6 +2,7 @@
 # VPC
 ################################################################################
 
+
 resource "aws_vpc" "myVPC" {
   cidr_block                       = var.cidr
   enable_dns_hostnames             = var.enable_dns_hostnames
